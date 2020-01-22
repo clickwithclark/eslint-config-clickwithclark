@@ -15,11 +15,11 @@ See the original https://github.com/wesbos/eslint-config-wesbos.git
 
 
 ## What it contains
-*js folder with minified lazy loading script
-*css folder with nomalize.css rules
-*settings.json file to get personal preferences on any machine to quickly (VS Code).
-*keybindings.json file to get personal keyboard shortcuts to use on any machine (VS Code).
-*Extensions.txt file to easily import preferred extensions (VS Code).
+* js folder with minified lazy loading script
+* css folder with nomalize.css rules
+* settings.json file to get personal preferences on any machine to quickly (VS Code).
+* keybindings.json file to get personal keyboard shortcuts to use on any machine (VS Code).
+* Extensions.txt file to easily import preferred extensions (VS Code).
 
 ## Installing-Eslint and Prettier
 
