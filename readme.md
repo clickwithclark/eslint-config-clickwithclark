@@ -1,7 +1,7 @@
 # Eslint and Prettier Setup + More
 These are my settings for ESLint and Prettier as well as other utility files I use for bootstrapping a project as fast as possible.
 
-# Constributer 
+# Contributor 
 This package was forked from wes bos' and stuffed with my preferences.
 See the original https://github.com/wesbos/eslint-config-wesbos.git
 
