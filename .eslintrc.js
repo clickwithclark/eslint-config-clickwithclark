@@ -7,7 +7,7 @@ module.exports = {
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2020,
-    // Can I remove these now?
+    // should be able to remove these
     "ecmaFeatures": {
       "impliedStrict": true,
       "classes": true

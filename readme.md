@@ -1,22 +1,33 @@
-# No-Sweat™ Eslint and Prettier Setup
-These are my settings for ESLint and Prettier
+# Eslint and Prettier Setup + More
+These are my settings for ESLint and Prettier as well as other utility files I use for bootstrapping a project as fast as possible.
 
-You might like them - or you might not. Don't worry you can always change them.
+# Contributor 
+This package was forked from wes bos' and stuffed with my preferences.
+See the original https://github.com/wesbos/eslint-config-wesbos.git
+
 
 ## What it does
 * Lints JavaScript based on the latest standards
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://github.com/clickwithclark/eslint-config-clickwithclark/blob/master/.eslintrc.js)
 
-## Installing
+
+## What it contains
+* js folder with minified lazy loading script
+* css folder with nomalize.css rules
+* settings.json file to get personal preferences on any machine to quickly (VS Code).
+* keybindings.json file to get personal keyboard shortcuts to use on any machine (VS Code).
+* Extensions.txt file to easily import preferred extensions (VS Code).
+
+## Installing-Eslint and Prettier
 
 You can use eslint globally and/or locally per project.
 
 It's usually best to install this locally once per project, that way you can have project specific settings as well as sync those settings with others working on your project via git.
 
-I also install globally so that any project or rogue JS file I write will have linting and formatting applied without having to go through the setup. You might disagree and that is okay, just don't do it then 😃.
+If  installed globally any project or rogue JS file I  will have linting and formatting applied without having to go through the setup. 😃
 
 
 ## Local / Per Project Install
@@ -26,7 +37,7 @@ I also install globally so that any project or rogue JS file I write will have l
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-wesbos
+npx install-peerdeps --dev eslint-config-clickwithclark
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -36,7 +47,7 @@ npx install-peerdeps --dev eslint-config-wesbos
 ```json
 {
   "extends": [
-    "wesbos"
+    "clickwithclark"
   ]
 }
 ```
@@ -75,21 +86,34 @@ In your `.eslintrc` file, it should look like this:
 ```json
 {
   "extends": [
-    "wesbos"
+    "clickwithclark"
   ]
 }
 ```
 
 3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
+## Installing - Extensions
+From within package folder run
+```console
+cat Extensions.txt | xargs -n 1 code --install-extension
+```
+## Implementing Lazyloading images
+Add script tag ```<script src="./js/lazysizes.min.js" async></script>```
+Add ```class="lazyload"``` to img tags
+
 
 ## Settings
+* open run with <kbd>ctrl</kbd>+<kbd>r</kbd> paste  ``` console %userprofile%/AppData/Roaming/Code/User``` 
+and hit enter
+* Copy the settings and keybindings json files to that loacation
+* Restart VS Code
 
 If you'd like to overwrite eslint or prettier settings, you can add the rules in your `.eslintrc` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"` while [prettier options](https://prettier.io/docs/en/options.html) go under `"prettier/prettier"`. Note that prettier rules overwrite anything in my config (trailing comma, and single quote), so you'll need to include those as well. 
 
 ```js
 {
   "extends": [
-    "wesbos"
+    "clickwithclark"
   ],
   "rules": {
     "no-console": 2,
@@ -135,8 +159,8 @@ Once you have done one, or both, of the above installs. You probably want your e
 ## With Create React App
 
 1. You gotta eject first `npm run eject` or `yarn eject`
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "wesbos"`
+1. Run `npx install-peerdeps --dev eslint-config-clickwithclark`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "clickwithclark"`
 
 
 ## 🤬🤬🤬🤬 IT'S NOT WORKING
@@ -144,7 +168,7 @@ Once you have done one, or both, of the above installs. You probably want your e
 Start fresh. Sometimes global modules can goof you up. This will remove them all:
 
 ```
-npm remove --global eslint-config-wesbos babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
+npm remove --global eslint-config-clickwithclark babel-eslint eslint eslint-config-prettier eslint-config-airbnb eslint-plugin-html eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react prettier eslint-plugin-react-hooks
 ```
 
 To do the above for local, omit the `--global` flag.
