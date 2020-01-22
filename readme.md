@@ -95,7 +95,7 @@ In your `.eslintrc` file, it should look like this:
 ## Installing - Extensions
 From within package folder run
 ```console
-cat Extensions.txt | xargs -n 1 code --install-extension
+cat extensions.txt | xargs -n 1 code --install-extension
 ```
 ## Implementing Lazyloading images
 Add script tag ```<script src="./js/lazysizes.min.js" async></script>```
