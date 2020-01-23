@@ -67,6 +67,11 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. You probably want your editor to do this though.
 
 7. Add this script to easily document process if for working with [Preview JSDOC](https://github.com/ludorival/vscode-preview-jsdoc)
+```json
+"scripts": {
+   "docs": "node_modules/.bin/jsdoc -c .eslintrc",
+},
+```
 
 ## Global Install
 
