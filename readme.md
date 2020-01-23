@@ -111,7 +111,7 @@ Add ```class="lazyload"``` to img tags
 
 
 ## Settings
-* open run with <kbd>ctrl</kbd>+<kbd>r</kbd> paste  ``` console %userprofile%/AppData/Roaming/Code/User``` 
+* open run with <kbd>ctrl</kbd> + <kbd>r</kbd> paste  ```%userprofile%/AppData/Roaming/Code/User``` 
 and hit enter
 * Copy the settings and keybindings json files to that loacation
 * Restart VS Code
