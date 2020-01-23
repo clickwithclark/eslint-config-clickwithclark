@@ -70,7 +70,7 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 1. First install everything needed:
 
 ```
-npx install-peerdeps --global eslint-config-wesbos
+npx install-peerdeps --global eslint-config-clickwithclark
 ```
 (**note:** npx is not a spelling mistake of **npm**. `npx` comes with when `node` and `npm` are installed and makes script running easier 😃)
 
