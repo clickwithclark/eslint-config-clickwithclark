@@ -20,6 +20,7 @@ See the original https://github.com/wesbos/eslint-config-wesbos.git
 * settings.json file to get personal preferences on any machine to quickly (VS Code).
 * keybindings.json file to get personal keyboard shortcuts to use on any machine (VS Code).
 * Extensions.txt file to easily import preferred extensions (VS Code).
+* jsdoc.json file to help document work as you code (VS Code).
 
 ## Installing-Eslint and Prettier
 
@@ -64,6 +65,8 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 ```
 
 6. Now you can manually lint your code by running `npm run lint` and fix all fixable issues with `npm run lint:fix`. You probably want your editor to do this though.
+
+7. Add this script to easily document process if for working with [Preview JSDOC](https://github.com/ludorival/vscode-preview-jsdoc)
 
 ## Global Install
 
