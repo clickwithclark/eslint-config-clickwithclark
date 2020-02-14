@@ -15,12 +15,18 @@ See the original https://github.com/wesbos/eslint-config-wesbos.git
 
 
 ## What it contains
+I got carried away as of "0.0.6" it will only be a linting package but I will leave the rules here incase I need version 5's help in a pinch
+
+<strike>
+  
 * js folder with minified lazy loading script
 * css folder with nomalize.css rules
 * settings.json file to get personal preferences on any machine to quickly (VS Code).
 * keybindings.json file to get personal keyboard shortcuts to use on any machine (VS Code).
 * Extensions.txt file to easily import preferred extensions (VS Code).
 * jsdoc.json file to help document work as you code (VS Code).
+
+</strike>
 
 ## Installing-Eslint and Prettier
 
@@ -100,21 +106,30 @@ In your `.eslintrc` file, it should look like this:
 ```
 
 3. To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
+
 ## Installing - Extensions
+
 From within package folder run
 ```console
 cat extensions.txt | xargs -n 1 code --install-extension
 ```
+
+  
 ## Implementing Lazyloading images
+
 Add script tag ```<script src="./js/lazysizes.min.js" async></script>```
 Add ```class="lazyload"``` to img tags
 
 
+
+  
 ## Settings
+
 * open run with <kbd>ctrl</kbd> + <kbd>r</kbd> paste  ```%userprofile%/AppData/Roaming/Code/User``` 
 and hit enter
 * Copy the settings and keybindings json files to that loacation
 * Restart VS Code
+
 
 If you'd like to overwrite eslint or prettier settings, you can add the rules in your `.eslintrc` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"` while [prettier options](https://prettier.io/docs/en/options.html) go under `"prettier/prettier"`. Note that prettier rules overwrite anything in my config (trailing comma, and single quote), so you'll need to include those as well. 
 
