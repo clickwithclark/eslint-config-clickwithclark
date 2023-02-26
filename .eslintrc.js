@@ -111,6 +111,8 @@ module.exports = {
       'error',
       {
         singleQuote: true,
+		trailingComma: 'es5',
+		printWidth: 80,
         endOfLine: 'auto',
       },
     ],
